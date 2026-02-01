@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Commerce Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Product Listing</h2>
+
+<select id="sortSelect" onchange="handleSort()">
+  <option value="">Sort By</option>
+  <option value="price-asc">Price: Low → High</option>
+  <option value="price-desc">Price: High → Low</option>
+  <option value="name-asc">Name: A → Z</option>
+  <option value="name-desc">Name: Z → A</option>
+  <option value="rating-desc">Rating: High → Low</option>
+</select>
+
+<select id="categorySelect" onchange="handleFilter()">
+  <option value="all">All Categories</option>
+  <option value="Electronics">Electronics</option>
+  <option value="Fashion">Fashion</option>
+  <option value="Books">Books</option>
+  <option value="Home">Home</option>
+</select>
+
+<div id="productContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
